@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -6,15 +12,76 @@ body {
   letter-spacing: 2%;
   background-color: #ffffff;
   color: #434455;
+  margin: 0;
+  padding: 0;
+}
+
+/* reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 a {
   text-decoration: none;
+}
+
+/* common */
+
+.container {
+  max-width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .logo {
@@ -31,23 +98,24 @@ a {
   color: #2e2f42;
 }
 
-.footer-logo .logo-part {
-  color: #f4f4fd;
-}
-
 .nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -61,11 +129,22 @@ a {
   color: #404bbf;
 }
 
+/* main */
+
+/* sect 1 */
+
+/* .container-title {
+  box-sizing: content-box;
+  width: 1201px;
+  height: 600px;
+} */
+
 .title {
   background-color: #2e2f42;
 }
 
 .title-text {
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -87,6 +166,31 @@ a {
 .title-button:hover,
 .title-button:focus {
   background-color: #404bbf;
+}
+
+/* sect 2 */
+
+.main-hide {
+  display: none;
+}
+
+.main-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.main-item {
+  box-sizing: border-box;
+  width: 264px;
+  height: 104px;
+}
+
+.main-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 156px 120px;
 }
 
 .main-title {
@@ -166,6 +270,8 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* footer */
 
 .footer-desc {
   font-weight: 400;
