@@ -185,10 +185,6 @@ a {
   overflow: hidden;
 }
 
-.main-item:not(:last-child) {
-  margin-right: 24px;
-}
-
 .main-content {
   padding: 120px 0;
 }
@@ -197,7 +193,7 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 24px;
 }
 
 .main-item {
