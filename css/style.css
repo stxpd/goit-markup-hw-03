@@ -203,7 +203,6 @@ a {
 .main-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
   text-align: center;
-  padding: 10px;
 }
 
 .main-title {
